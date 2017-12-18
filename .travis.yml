@@ -28,6 +28,4 @@ script:
   - mkdir build
   - cd build
   - cmake .. && make
-  - cd
-  - build/Examples
-  - cmake --build build --target test -- ARGS=--verbose
+  - Examples
