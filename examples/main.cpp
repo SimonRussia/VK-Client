@@ -17,7 +17,9 @@ int main()
     {
         std::cout<<std::endl<<"Successfully connected!"<<std::endl;
         lst = client.get_docs();
+        std::cout<<std::endl<<"Successfully connected!"<<std::endl;
         Vk_Thread th(lst);
+        std::cout<<std::endl<<"Successfully connected!"<<std::endl;
         if (th.user_input())
         {
             std::cout << "END" << std::endl;
