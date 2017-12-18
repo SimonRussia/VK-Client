@@ -12,7 +12,7 @@ int main()
     std::cout<<std::endl<<"hardware_concurrency: "<<std::endl;
     std::cout<<std::thread::hardware_concurrency()<<std::endl;
     std::cout<<std::endl;
-    Client client ("87b0f4e887b0f4e887b0f4e81f87ef2e05887b087b0f4e8dd928ec42b8c3a9268d740d1"); //старый "просроченный" токен
+    Client client ("87b0f4e887b0f4e887b0f4e81f87ef2e05887b087b0f4e8dd928ec42b8c3a9268d740d1&"); //старый "просроченный" токен
     if (client.check_connection())
     {
         std::cout<<std::endl<<"Successfully connected!"<<std::endl;
