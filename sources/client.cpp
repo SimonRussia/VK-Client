@@ -86,8 +86,8 @@ auto Client::get_docs() -> std::vector<Document>
     if (curl)
     {
         // прописываем настройки для авторизации через token
-       std::string fields = "count=45&offset=0&type=1&owner_id=383793643&access_token=" + a_token + "&v=5.60";
-     //   std::string fields = "count=1&offset=0&type=1&owner_id=383793643&access_token=" + a_token + "&v=5.60";
+       std::string fields = "count=45&offset=0&type=1&owner_id=383793643&access_token=" + a_token + "&v=5.69";
+     //   std::string fields = "count=1&offset=0&type=1&owner_id=383793643&access_token=" + a_token + "&v=5.69";
 
         // строка для получения ответа от сервера
         std::string buffer = "";
