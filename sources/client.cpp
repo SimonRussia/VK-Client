@@ -29,7 +29,7 @@ auto Client::check_connection() -> bool
 
     if (curl)
     {
-        std::string fields = "access_token=" + a_token + "&v=5.59";
+        std::string fields = "access_token=" + a_token + "&v=5.69";
 
         std::string buffer;
 
