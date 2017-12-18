@@ -24,6 +24,8 @@ matrix:
             - llvm-toolchain-precise
             - ubuntu-toolchain-r-test
 
+cache: apt
+
 script:
   - mkdir build
   - cd build
