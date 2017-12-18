@@ -24,7 +24,9 @@ matrix:
             - llvm-toolchain-precise
             - ubuntu-toolchain-r-test
 
-cache: apt
+cache:
+  directories:
+    - ${TRAVIS_BUILD_DIR}/deps
 
 script:
   - mkdir build
