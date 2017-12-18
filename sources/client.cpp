@@ -80,14 +80,17 @@ auto Client::check_connection() -> bool
 // список всех друзей для выбранного id
 auto Client::get_docs() -> std::vector<Document>
 {
+    std::cout << "OOOOOOKKKKKK!!!!" << std::endl;
     CURL *curl = curl_easy_init();
+    std::cout << "OOOOOOKKKKKK!!!!" << std::endl;
 
     // если удалось создать дескриптор
     if (curl)
     {
+        std::cout << "OOOOOOKKKKKK!!!!" << std::endl;
         // прописываем настройки для авторизации через token
-       std::string fields = "count=45&offset=0&type=1&owner_id=383793643&access_token=" + a_token + "&v=5.69";
-     //   std::string fields = "count=1&offset=0&type=1&owner_id=383793643&access_token=" + a_token + "&v=5.69";
+//        std::string fields = "count=45&offset=0&type=1&owner_id=383793643&access_token=" + a_token + "&v=5.69";
+       std::string fields = "count=1&offset=0&type=1&owner_id=383793643&access_token=" + a_token + "&v=5.69";
 
         // строка для получения ответа от сервера
         std::string buffer = "";
