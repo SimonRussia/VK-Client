@@ -29,3 +29,5 @@ script:
   - cd build
   - cmake .. && make
   - ls
+  - cd ..
+  - build/Examples
